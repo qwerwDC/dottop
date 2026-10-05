@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08090b">
+  <meta name="description" content="Господину Точке — с огромной благодарностью за 100 000 кредитов. Один знак. Легендарный поступок.">
+  <title>Господин . — легендарная щедрость</title>
+  <style>
+    :root{color-scheme:dark;--bg:#08090b;--text:#f3eee5;--muted:#a8a7ac;--gold:#e4bb76;--line:rgba(228,187,118,.19);--serif:Georgia,'Times New Roman',serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.6;overflow-x:hidden}body.locked{overflow:hidden}button,a,input{-webkit-tap-highlight-color:transparent}button{font:inherit;color:inherit;cursor:pointer}a{color:inherit;text-decoration:none}button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--gold);outline-offset:6px}button:disabled{cursor:default}::selection{background:#e4bb76;color:#08090b}
+    #stars,#celebration{position:fixed;inset:0;width:100%;height:100%;pointer-events:none}#stars{z-index:0;opacity:.6}#celebration{z-index:30}main,header,footer{position:relative;z-index:1}.container{width:min(1240px,calc(100% - 96px));margin:auto}
+    .ambient{position:fixed;z-index:0;inset:0;pointer-events:none;background:radial-gradient(ellipse at 78% 28%,#53392323,transparent 45%),radial-gradient(ellipse at 0% 65%,#242d3d28,transparent 50%)}.eyebrow{font-size:12px;letter-spacing:.23em;text-transform:uppercase;color:var(--gold)}.rule{height:1px;background:var(--line)}
+    header{height:96px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:20px}.brand{display:flex;align-items:center;gap:12px;font-size:14px;letter-spacing:.04em}.brand-dot{width:11px;height:11px;border-radius:50%;background:var(--gold);box-shadow:0 0 22px #e4bb7655}.nav{display:flex;align-items:center;gap:32px;font-size:14px;color:var(--muted)}.nav a:hover{color:var(--text)}.sound{background:#111216b8;border:1px solid var(--line);border-radius:30px;min-height:44px;padding:10px 17px;display:flex;align-items:center;gap:10px;font-size:14px}.bars{height:14px;display:flex;align-items:center;gap:3px}.bars i{display:block;background:var(--gold);width:2px;height:4px;border-radius:2px}.playing .bars i{animation:equalize .85s ease-in-out infinite alternate}.playing .bars i:nth-child(2){animation-delay:-.4s}.playing .bars i:nth-child(3){animation-delay:-.65s}.playing .bars i:nth-child(4){animation-delay:-.2s}
+    .hero{min-height:calc(100svh - 96px);padding:70px 0 42px;display:grid;grid-template-columns:1.08fr 1fr;align-items:center;gap:30px;position:relative}.hero-copy{position:relative;z-index:3}.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(65px,7.7vw,110px);line-height:1;letter-spacing:-.065em;margin:27px 0 27px}.hero h1 em{font-weight:400;color:var(--gold);font-style:italic}.hero-text{color:var(--muted);max-width:405px;line-height:1.85;font-size:17px}.hero-text strong{color:var(--text);font-weight:400}.hero-actions{display:flex;gap:23px;align-items:center;flex-wrap:wrap;margin-top:35px}.button{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--gold);background:var(--gold);color:#16130e;padding:14px 23px;min-height:50px;font-size:14px;border-radius:3px;transition:background .2s,transform .2s}.button:hover{background:#f6d8a8;transform:translateY(-2px)}.text-link{font-size:14px;color:var(--muted);border-bottom:1px solid #6a6355;padding-bottom:4px}.text-link:hover{color:var(--text)}
+    .monument{height:530px;position:relative;display:grid;place-items:center;isolation:isolate}.halo{position:absolute;width:91%;aspect-ratio:1;border:1px solid var(--line);border-radius:50%}.halo::before,.halo::after{content:'';position:absolute;border:1px solid #e4bb7610;border-radius:50%;inset:8%}.halo::after{inset:-7%}.orbit{position:absolute;inset:0;border-radius:50%;animation:rotate 55s linear infinite}.orbit::after{content:'';width:6px;height:6px;position:absolute;left:50%;top:-3px;border-radius:50%;background:var(--gold);box-shadow:0 0 17px var(--gold)}.orbit.alt{transform:rotate(120deg);animation-duration:80s;animation-direction:reverse;inset:8%}.orbit.alt::after{width:3px;height:3px;top:-2px}.dot-button{width:59%;aspect-ratio:1;border-radius:50%;border:1px solid #f4d9a566;background:radial-gradient(circle at 32% 24%,#ffe5a9 0%,#d9b16b 18%,#a67c42 43%,#664326 70%,#271d16 100%);box-shadow:inset -18px -20px 40px #120c0780,inset 8px 8px 22px #ffeac12b,0 0 80px #c4973c13;position:relative;transition:transform .4s,box-shadow .4s;overflow:hidden}.dot-button::after{content:'';position:absolute;inset:0;border-radius:50%;background:repeating-linear-gradient(115deg,transparent 0 2px,#12090010 3px 4px);opacity:.6}.dot-button:hover{transform:scale(1.035);box-shadow:inset -18px -20px 40px #120c0780,0 0 110px #c4973c33}.dot-button:active{transform:scale(.96)}.coordinate{position:absolute;left:7%;top:6%;font-size:12px;color:#a49b8c;letter-spacing:.13em}.monument-caption{position:absolute;bottom:0;text-align:center;font-size:12px;color:var(--muted);letter-spacing:.15em}.monument-caption span{display:block;color:var(--gold);font-size:14px;letter-spacing:.07em;margin-bottom:8px}.hero-bottom{grid-column:1/-1;display:flex;justify-content:space-between;gap:20px;align-items:center;padding-top:20px;color:var(--muted);font-size:12px;letter-spacing:.08em}.hero-bottom .line{width:52px;height:1px;background:var(--gold);display:inline-block;margin-right:14px;vertical-align:middle}
+    .ticker{overflow:hidden;border-block:1px solid var(--line);padding:23px 0;background:#11100d75;position:relative;z-index:1}.ticker-track{display:flex;gap:36px;width:max-content;animation:marquee 35s linear infinite;font-size:13px;letter-spacing:.22em;color:var(--muted)}.ticker-track b{color:var(--gold);font-weight:400}.ticker-track span{white-space:nowrap}
+    .gift{padding:110px 0 95px;display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.gift-value{font-size:clamp(75px,9vw,133px);font-family:var(--serif);font-weight:400;letter-spacing:-.065em;line-height:1.05;white-space:nowrap;margin:22px 0 10px;color:var(--gold)}.gift-label{color:var(--muted);font-size:14px;letter-spacing:.07em}.gift h2,.letter h2{font-size:clamp(34px,3.5vw,49px);line-height:1.17;letter-spacing:-.04em;font-weight:400;font-family:var(--serif);margin:18px 0 25px}.gift p{color:var(--muted);font-size:17px;max-width:465px;line-height:1.9}.gift p strong{font-weight:400;color:var(--text)}
+    .impact{display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid var(--line);margin-bottom:115px}.impact article{padding:36px 36px 42px 0}.impact article+article{border-left:1px solid var(--line);padding-left:36px}.impact-number{color:var(--gold);font-size:12px;letter-spacing:.2em}.impact h3{font-size:23px;font-family:var(--serif);font-weight:400;margin:22px 0 13px}.impact p{font-size:16px;color:var(--muted);max-width:320px;margin:0;line-height:1.8}
+    .letter{position:relative;display:grid;grid-template-columns:.6fr 1.4fr;gap:70px;padding:0 0 100px}.letter aside{padding-top:10px}.letter aside .mini-dot{width:53px;height:53px;border-radius:50%;background:var(--gold);margin-top:35px;box-shadow:0 0 35px #e4bb761f}.letter h2{margin:0 0 30px}.letter-text{font-family:var(--serif);font-size:clamp(22px,2.2vw,29px);line-height:1.7;letter-spacing:-.015em}.letter-text p{margin:0 0 26px}.letter-text .soft{color:var(--muted);font-size:19px;font-family:Arial,Helvetica,sans-serif;line-height:1.9;letter-spacing:0}.signature{margin-top:35px;display:flex;align-items:center;gap:20px;font-size:14px;color:var(--gold)}.signature::before{content:'';height:1px;width:35px;background:var(--gold)}
+    .finale{border:1px solid var(--line);text-align:center;padding:75px 24px 70px;position:relative;background:radial-gradient(ellipse at 50% 120%,#bd8d3430,transparent 70%);margin-bottom:70px}.finale .end-dot{display:block;width:16px;height:16px;margin:0 auto 24px;background:var(--gold);border-radius:50%;box-shadow:0 0 32px #e4bb7655}.finale h2{font-family:var(--serif);font-weight:400;font-size:clamp(36px,5vw,64px);letter-spacing:-.04em;line-height:1.12;margin:20px 0}.finale h2 em{color:var(--gold);font-weight:400}.finale p{color:var(--muted);max-width:440px;margin:0 auto 30px;line-height:1.8}.finale .button{background:transparent;color:var(--gold)}.finale .button:hover{background:#e4bb761a}footer{padding:25px 0 38px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:12px;letter-spacing:.04em;color:var(--muted)}
+    .audio-panel{position:fixed;z-index:15;right:28px;bottom:24px;background:#151517ec;border:1px solid var(--line);border-radius:8px;padding:15px 18px;box-shadow:0 10px 60px #0007;backdrop-filter:blur(18px);width:275px}.audio-panel[hidden]{display:none}.audio-panel-label{display:flex;align-items:center;justify-content:space-between;font-size:14px;margin-bottom:12px}.close-panel{border:0;background:transparent;color:var(--muted);font-size:21px;line-height:1;padding:4px 8px}.audio-row{display:flex;align-items:center;gap:12px}.audio-play{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:#e4bb7610;color:var(--gold)}input[type=range]{accent-color:var(--gold);width:100%;min-width:0}.audio-note{margin:12px 0 0;font-size:12px;line-height:1.5;color:var(--muted)}.toast{position:fixed;z-index:40;bottom:32px;left:50%;transform:translate(-50%,20px);background:#1a1917f2;border:1px solid var(--line);color:var(--gold);padding:14px 24px;border-radius:40px;font-size:14px;text-align:center;pointer-events:none;opacity:0;transition:opacity .3s,transform .3s;max-width:90vw;white-space:nowrap}.toast.show{opacity:1;transform:translate(-50%,0)}
+    .intro{position:fixed;inset:0;z-index:50;background:#08090b;display:grid;place-items:center;transition:opacity .8s,visibility .8s;overflow:hidden}.intro.leaving{opacity:0;visibility:hidden;pointer-events:none}.intro-enter{width:100%;height:100%;border:0;background:transparent;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:30px;text-align:center;position:relative}.intro-enter::before{content:'';position:absolute;width:min(70vw,650px);aspect-ratio:1;border:1px solid var(--line);border-radius:50%;background:radial-gradient(circle,#b28b2720,transparent 62%);pointer-events:none}.intro .eyebrow{z-index:1}.intro-point{width:80px;height:80px;border-radius:50%;background:radial-gradient(circle at 30% 25%,#ffe3a8,#c69650 48%,#58402c);box-shadow:0 0 70px #dab36b33;margin:45px 0 36px;animation:breathe 3s ease-in-out infinite}.intro-title{position:relative;font-family:var(--serif);font-size:clamp(43px,6vw,76px);font-weight:400;line-height:1.05;letter-spacing:-.045em;margin-bottom:24px}.intro-hint{font-size:15px;color:var(--muted);z-index:1}.intro-play{display:flex;align-items:center;gap:11px;border:1px solid var(--line);border-radius:28px;padding:12px 20px;margin-top:32px;font-size:14px;z-index:1;color:var(--gold)}.intro-bottom{position:absolute;bottom:30px;font-size:12px;letter-spacing:.12em;color:var(--muted)}
+    .reveal{opacity:0;transform:translateY(24px);transition:opacity .9s,transform .9s}.reveal.visible{opacity:1;transform:none}@keyframes breathe{50%{box-shadow:0 0 100px #dab36b55;transform:scale(1.05)}}@keyframes rotate{to{transform:rotate(360deg)}}@keyframes marquee{to{transform:translateX(-50%)}}@keyframes equalize{to{height:14px}}
+    @media(min-width:1600px){.hero{min-height:830px}}@media(max-width:1000px){.container{width:calc(100% - 56px)}.nav{gap:20px}.hero{gap:10px}.monument{height:440px}.hero h1{font-size:79px}.gift{gap:35px}.impact article{padding-right:24px}.impact article+article{padding-left:24px}.letter{gap:40px}}
+    @media(max-width:700px){.container{width:calc(100% - 40px)}header{height:78px}.nav>a{display:none}.sound{padding:10px 13px;font-size:12px}.brand{font-size:12px}.hero{grid-template-columns:1fr;padding:45px 0 30px;gap:15px;min-height:auto}.hero h1{font-size:clamp(62px,15vw,92px);margin:22px 0}.hero-text{font-size:16px;max-width:95%}.hero-actions{margin-top:26px;gap:18px}.monument{width:min(100%,430px);height:auto;aspect-ratio:1;margin:10px auto 30px}.monument-caption{bottom:-14px}.coordinate{font-size:10px;top:3%}.hero-bottom{font-size:10px;padding-top:15px}.hero-bottom>span:last-child{max-width:115px;text-align:right}.gift{grid-template-columns:1fr;gap:32px;padding:70px 0 50px}.gift-value{font-size:clamp(76px,20vw,115px)}.gift h2{font-size:37px;margin-top:0}.gift p{font-size:16px}.impact{grid-template-columns:1fr;margin-bottom:70px}.impact article,.impact article+article{padding:27px 0;border-left:0}.impact article+article{border-top:1px solid var(--line)}.impact h3{margin-top:14px}.impact p{max-width:100%}.letter{grid-template-columns:1fr;gap:28px;padding-bottom:60px}.letter aside .mini-dot{display:none}.letter-text .soft{font-size:17px}.finale{padding:55px 20px;margin-bottom:45px}.finale h2{font-size:43px}footer{align-items:flex-start;font-size:11px;gap:15px}footer span:last-child{text-align:right;max-width:135px}.audio-panel{right:14px;bottom:14px;width:min(275px,calc(100vw - 28px))}.toast{white-space:normal;width:max-content;bottom:24px}.eyebrow{font-size:11px}.intro-point{width:65px;height:65px;margin:38px 0 30px}.intro-hint{font-size:14px;max-width:260px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.intro-point{box-shadow:0 0 70px #dab36b33}}
+  </style>
+</head>
+<body class="locked">
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <canvas id="celebration" aria-hidden="true"></canvas>
+  <div class="ambient" aria-hidden="true"></div>
+  <audio id="anthem" src="./Господин Точка.mp3" preload="none" loop></audio>
+
+  <div class="intro" id="intro">
+    <button class="intro-enter" id="enter" aria-label="Войти на сайт и включить гимн Господина Точки">
+      <span class="eyebrow">Посвящается великому .</span>
+      <span class="intro-point" aria-hidden="true"></span>
+      <span class="intro-title">Один знак.<br>Целая легенда.</span>
+      <span class="intro-hint">Нажми в любом месте.<br>Эта благодарность звучит с музыкой.</span>
+      <span class="intro-play"><span aria-hidden="true">▶</span> Прикоснись к легенде</span>
+      <span class="intro-bottom">ГОСПОДИН ТОЧКА · 100 000 КРЕДИТОВ</span>
+    </button>
+  </div>
+
+  <div id="page" inert>
+    <header class="container">
+      <a href="#home" class="brand" aria-label="Господин Точка — в начало"><span class="brand-dot" aria-hidden="true"></span> ГОСПОДИН .</a>
+      <nav class="nav" aria-label="Навигация">
+        <a href="#gift">Легендарный поступок</a><a href="#thanks">Личное спасибо</a>
+        <button class="sound" id="sound" aria-expanded="false" aria-controls="audio-panel"><span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span id="sound-label">Гимн Точки</span></button>
+      </nav>
+    </header>
+    <main>
+      <section class="hero container" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow">Легенда. Босс. Господин.</div>
+          <h1 id="hero-title">Господин<br><em>Точка.</em></h1>
+          <p class="hero-text">Самый короткий ник.<br>Один из самых щедрых поступков.<br><strong>Этот маленький уголок вселенной — тебе.</strong></p>
+          <div class="hero-actions"><a class="button" href="#thanks">Прочитать благодарность</a><a class="text-link" href="#gift">За что этот гимн</a></div>
+        </div>
+        <div class="monument">
+          <span class="coordinate">НИК: . / СТАТУС: ЛЕГЕНДА</span>
+          <div class="halo" aria-hidden="true"><div class="orbit"></div><div class="orbit alt"></div></div>
+          <button class="dot-button" id="great-dot" aria-label="Отпраздновать щедрость Господина Точки"></button>
+          <div class="monument-caption"><span>Всего одна точка. Бесконечное уважение.</span>НАЖМИ НА ТОЧКУ — ОНА ЭТО ЗАСЛУЖИЛА</div>
+        </div>
+        <div class="hero-bottom"><span><span class="line"></span> СДЕЛАНО С БЛАГОДАРНОСТЬЮ</span><span>100 000 ПРИЧИН СКАЗАТЬ СПАСИБО</span></div>
+      </section>
+      <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>ГОСПОДИН ТОЧКА</span><b>✦</b><span>ЛЕГЕНДАРНАЯ ЩЕДРОСТЬ</span><b>✦</b><span>100 000 КРЕДИТОВ</span><b>✦</b><span>БЕСКОНЕЧНОЕ УВАЖЕНИЕ</span><b>✦</b><span>ГОСПОДИН ТОЧКА</span><b>✦</b><span>ЛЕГЕНДАРНАЯ ЩЕДРОСТЬ</span><b>✦</b><span>100 000 КРЕДИТОВ</span><b>✦</b><span>БЕСКОНЕЧНОЕ УВАЖЕНИЕ</span><b>✦</b></div></div>
+      <section class="gift container reveal" id="gift" aria-labelledby="gift-title">
+        <div><div class="eyebrow">Подарок, который запомнится</div><div class="gift-value" id="credit-count">100 000</div><div class="gift-label">кредитов. Просто так. По-королевски.</div></div>
+        <div><h2 id="gift-title">Щедрость<br>легендарного масштаба.</h2><p>Когда я увидел <strong>100 000 кредитов</strong>, обычного «спасибо» стало мало. Поэтому появилась песня. Поэтому появился этот сайт. Потому что такой поступок хочется запомнить.</p></div>
+      </section>
+      <section class="impact container reveal" aria-label="За что я благодарен">
+        <article><span class="impact-number">01 / ВОЗМОЖНОСТИ</span><h3>Больше воплощённых идей.</h3><p>Теперь можно пробовать, придумывать и доводить задумки до результата. Твой подарок дал для этого настоящий размах.</p></article>
+        <article><span class="impact-number">02 / ПОДДЕРЖКА</span><h3>Жест, который вдохновляет.</h3><p>Дело ещё и в ощущении: кто-то взял и так сильно поддержал. Это заряжает сильнее любого красивого обещания.</p></article>
+        <article><span class="impact-number">03 / УВАЖЕНИЕ</span><h3>Маленький ник. Большой человек.</h3><p>Никакой длинной подписи не нужно. После такого подарка один-единственный знак говорит сам за себя.</p></article>
+      </section>
+      <section class="letter container reveal" id="thanks" aria-labelledby="letter-title">
+        <aside><div class="eyebrow">Личное послание</div><div class="mini-dot" aria-hidden="true"></div></aside>
+        <div><h2 id="letter-title">Господин Точка,<br>это всё — тебе.</h2><div class="letter-text"><p>Ты подарил сто тысяч кредитов, а вместе с ними — огромный простор для творчества. Я до сих пор смотрю на эту цифру и думаю: «Вот это размах».</p><p class="soft">За твою щедрость — огромное спасибо. За то, что поддержал мои идеи, — отдельное. Очень хочется, чтобы из этого подарка появилось много классного: музыка, рисунки, сайты и то, до чего я ещё не додумался.</p><p>Пусть у тебя будет столько же поводов улыбнуться, сколько ты подарил мне возможностей.</p><p class="soft">Этот сайт не вместит всю благодарность. Но пусть он станет маленьким памятником одному очень большому поступку.</p></div><div class="signature">С огромным уважением и благодарностью</div></div>
+      </section>
+      <section class="finale container reveal" aria-labelledby="finale-title"><span class="end-dot" aria-hidden="true"></span><div class="eyebrow">Последнее слово — за легендой</div><h2 id="finale-title">Спасибо.<br><em>И ещё сто тысяч раз.</em></h2><p>Господин Точка, твой жест заслужил собственный гимн. Пусть он звучит.</p><button class="button" id="celebrate">Аплодисменты Господину .</button></section>
+    </main>
+    <footer class="container"><span>ГОСПОДИН . · ЛЕГЕНДА БЕЗ ЛИШНИХ БУКВ</span><span>За 100 000 кредитов.<br>От всей души.</span></footer>
+  </div>
+
+  <div class="audio-panel" id="audio-panel" hidden>
+    <div class="audio-panel-label"><span>Господин Точка</span><button class="close-panel" id="close-panel" aria-label="Закрыть управление музыкой">×</button></div>
+    <div class="audio-row"><button class="audio-play" id="audio-play" aria-label="Включить музыку">▶</button><input id="volume" type="range" min="0" max="1" step="0.01" value="0.55" aria-label="Громкость музыки"></div>
+    <p class="audio-note" id="audio-note" role="status">Гимн звучит по кругу.</p>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    'use strict';
+    // Положи файл «Господин Точка.mp3» в ту же папку, что и этот HTML.
+    const audio=document.getElementById('anthem');
+    const intro=document.getElementById('intro');
+    const enter=document.getElementById('enter');
+    const page=document.getElementById('page');
+    const sound=document.getElementById('sound');
+    const panel=document.getElementById('audio-panel');
+    const audioPlay=document.getElementById('audio-play');
+    const audioNote=document.getElementById('audio-note');
+    const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let entered=false,toastTimer;
+    audio.volume=.55;
+
+    function updateAudio(){
+      const playing=!audio.paused;
+      sound.classList.toggle('playing',playing);
+      document.getElementById('sound-label').textContent=playing?'Гимн звучит':'Гимн Точки';
+      audioPlay.textContent=playing?'Ⅱ':'▶';
+      audioPlay.setAttribute('aria-label',playing?'Поставить музыку на паузу':'Включить музыку');
+    }
+    function setPanel(open){panel.hidden=!open;sound.setAttribute('aria-expanded',String(open));}
+    function musicError(){audioNote.textContent='Гимн пока недоступен. Попробуй включить его ещё раз.';updateAudio();}
+    function playMusic(){
+      // Вызывается сразу из обработчика клика: это важно для мобильных браузеров.
+      const promise=audio.play();
+      if(promise)promise.then(()=>{audioNote.textContent='Гимн звучит по кругу.';}).catch(musicError);
+    }
+    audio.addEventListener('play',updateAudio);
+    audio.addEventListener('pause',updateAudio);
+    audio.addEventListener('error',musicError);
+    document.getElementById('volume').addEventListener('input',event=>audio.volume=Number(event.target.value));
+    audioPlay.addEventListener('click',()=>{if(audio.paused)playMusic();else audio.pause();});
+    sound.addEventListener('click',()=>setPanel(panel.hidden));
+    document.getElementById('close-panel').addEventListener('click',()=>{setPanel(false);sound.focus();});
+    document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!panel.hidden){setPanel(false);sound.focus();}});
+
+    enter.addEventListener('click',()=>{
+      if(entered)return;entered=true;
+      playMusic();
+      intro.classList.add('leaving');page.inert=false;document.body.classList.remove('locked');
+      document.querySelector('.brand').focus({preventScroll:true});
+      setTimeout(()=>intro.remove(),reduceMotion?0:850);
+      requestAnimationFrame(startReveals);
+      if(!reduceMotion)burst(innerWidth*.72,innerHeight*.45,55);
+    });
+    function startReveals(){
+      const sections=document.querySelectorAll('.reveal');
+      if(!('IntersectionObserver' in window)){sections.forEach(s=>s.classList.add('visible'));return;}
+      const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(!entry.isIntersecting)return;entry.target.classList.add('visible');if(entry.target.id==='gift')animateCredits();observer.unobserve(entry.target);});},{threshold:.12});
+      sections.forEach(section=>observer.observe(section));
+    }
+    function animateCredits(){
+      if(reduceMotion)return;
+      const element=document.getElementById('credit-count'),start=performance.now();
+      function frame(now){const progress=Math.min(1,(now-start)/1400),ease=1-Math.pow(1-progress,3);element.textContent=Math.round(100000*ease).toLocaleString('ru-RU');if(progress<1)requestAnimationFrame(frame);}
+      requestAnimationFrame(frame);
+    }
+    function toast(message){const element=document.getElementById('toast');element.textContent=message;element.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>element.classList.remove('show'),2600);}
+    const compliments=['Господин . — абсолютная легенда.','100 000 кредитов. Бесконечное уважение.','Самый короткий ник. Самая большая щедрость.','Это твоя вселенная, Господин Точка.','Спасибо за такой размах!'];
+    let complimentIndex=0;
+    function celebrate(event){const rect=event.currentTarget.getBoundingClientRect();if(!reduceMotion)burst(rect.left+rect.width/2,rect.top+rect.height/2,110);toast(compliments[complimentIndex++%compliments.length]);}
+    document.getElementById('great-dot').addEventListener('click',celebrate);
+    document.getElementById('celebrate').addEventListener('click',celebrate);
+
+    // Лёгкий звёздный фон и частицы. Не требуют библиотек или внешних файлов.
+    const starCanvas=document.getElementById('stars'),starContext=starCanvas.getContext('2d');
+    const effectCanvas=document.getElementById('celebration'),effectContext=effectCanvas.getContext('2d');
+    let width=innerWidth,height=innerHeight,stars=[],particles=[],lastFrame=0,effectFrame=0;
+    function resize(){width=innerWidth;height=innerHeight;const ratio=Math.min(devicePixelRatio||1,2);for(const canvas of [starCanvas,effectCanvas]){canvas.width=Math.round(width*ratio);canvas.height=Math.round(height*ratio);canvas.getContext('2d').setTransform(ratio,0,0,ratio,0,0);}stars=Array.from({length:Math.min(150,Math.floor(width*height/8000))},()=>({x:Math.random()*width,y:Math.random()*height,r:Math.random()*.9+.3,a:Math.random()*.6+.15,phase:Math.random()*Math.PI*2}));drawStars(0);}
+    function drawStars(time){starContext.clearRect(0,0,width,height);for(const star of stars){starContext.fillStyle=`rgba(234,217,184,${star.a*(reduceMotion?1:.7+.3*Math.sin(time*.0005+star.phase))})`;starContext.beginPath();starContext.arc(star.x,star.y,star.r,0,Math.PI*2);starContext.fill();}}
+    function starLoop(time){if(!document.hidden&&time-lastFrame>50){drawStars(time);lastFrame=time;}requestAnimationFrame(starLoop);}
+    function burst(x,y,count){particles.push(...Array.from({length:count},()=>{const angle=Math.random()*Math.PI*2,speed=Math.random()*5+1.2;return{x,y,vx:Math.cos(angle)*speed,vy:Math.sin(angle)*speed-1.5,life:1,size:Math.random()*3+1,color:Math.random()>.3?'228,187,118':'255,240,211'};}));particles=particles.slice(-330);if(!effectFrame)effectFrame=requestAnimationFrame(drawParticles);}
+    function drawParticles(){effectContext.clearRect(0,0,width,height);particles=particles.filter(p=>p.life>0);for(const p of particles){p.x+=p.vx;p.y+=p.vy;p.vy+=.055;p.vx*=.99;p.life-=.012;effectContext.fillStyle=`rgba(${p.color},${p.life})`;effectContext.fillRect(p.x,p.y,p.size,p.size);}effectFrame=particles.length?requestAnimationFrame(drawParticles):0;}
+    window.addEventListener('resize',resize,{passive:true});resize();if(!reduceMotion)requestAnimationFrame(starLoop);
+  </script>
+</body>
+</html>
